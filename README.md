@@ -1,2 +1,2 @@
 # origamid-course
-Repositório do curso de Web Design Origamid
+Repositório do curso de Web Design Origamid.
