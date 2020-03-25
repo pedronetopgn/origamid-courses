@@ -1,16 +1,48 @@
 p{
+    font-size: 16px;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #bbb;
+}
+
+div p, a{
     color: green;
 }
 
-h1{
-    color: #32aa43;
-    font-size: 30px;
+*{
+    text-transform: uppercase;
+    color: orange;
+} /*Modifica todo o conteúdo, mas não sobrepõe as determinações espefícicas*/
+
+/*acessando pela class e id:*/
+.btn-comprar{
+    color: black;
 }
 
-body{
-    color: green;
+.principal{
+    width: 100px;
 }
+/*#principal{
+    width: 100px;
+}*/
 
 a{
-    color: black;
+    width: 100px;
+    height: 20px;
+    background: black;
+    padding: 10px;
+}
+
+a:hover{ /*pseudo classe*/
+    font-size: 20px;
+    color: blueviolet;
+}
+
+a:visited{ /*botão ficar com cor diferente depois de ser clicado*/
+    
 }
