@@ -5,9 +5,13 @@ body {
 }
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 14px;
     line-height: 20px;
+}
+
+img{
+    display: block;
 }
 
 .btn {
@@ -32,7 +36,7 @@ p {
 }
 
 .subtitulo {
-    color: #FFF;
+    font-size: 24px;
     line-height: 30px;
     font-weight: bold;
     letter-spacing: .1em;
@@ -91,7 +95,7 @@ p {
     height: 380px;
     background: url(../img/bg.jpg) no-repeat center;
     background-size: cover;
-    margin-top: 96px;
+    margin-top: 92px;
     text-align: center;
     padding-top: 80px;
 }
@@ -104,7 +108,7 @@ p {
 }
 
 .quote-externo {
-    max-width: 360px;
+    max-width: 320px;
     margin: 0 auto;
     color: #FFF;
     margin-bottom: 40px;
@@ -139,6 +143,10 @@ p {
 .produtos_lista li {
     background: #fec63e;
     text-align: center;
+}
+
+.produtos_lista li img { /* centraliza os ícones dos produtos */
+	margin: 0 auto;
 }
 
 .produtos_lista li h3 {
@@ -176,4 +184,74 @@ p {
 
 .call p {
     margin-bottom: 20px;
+}
+
+/* Portfólio */
+.portfolio {
+    width: 100%;
+    background: #000;
+    padding: 40px;
+}
+
+.portfolio .subtitulo {
+    color: #fec63e;
+}
+
+.portfolio .subtitulo:after {
+    background: #fec63e;
+}
+
+.portfolio_lista li:last-child {
+    margin-top: 20px;
+}
+
+.portfolio .call p {
+    color: #FFF;
+}
+
+/* Qualidade */
+.qualidade {
+    padding: 60px 0px;
+}
+.qualidade:after {
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url(../img/linhas.svg) no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+    z-index: -1;
+}
+
+.qualidade img {
+    margin: 0 auto;
+}
+
+.qualidade_lista {
+    padding-top: 20px;
+}
+
+.qualidade_lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.qualidade_lista li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 6px auto;
 }
