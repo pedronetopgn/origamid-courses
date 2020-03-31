@@ -10,8 +10,9 @@ p {
     line-height: 20px;
 }
 
-img{
+img {
     display: block;
+    max-width: 100%; /* IMAGEM RESPONSIVA */
 }
 
 .btn {
@@ -80,7 +81,7 @@ img{
     width: 100%;
     top: 0;
     background: #fec63e; /* Amarelo */
-    padding: 15px 0px;
+    padding: 15px 0;
     z-index: 10;
 }
 
