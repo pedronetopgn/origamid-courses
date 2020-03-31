@@ -2,12 +2,12 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Bikcraft - Portfólio</title>
+        <title>Bikcraft - Contato</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/contato.css">
     </head>
 
     <body>
@@ -22,8 +22,8 @@
                     <ul>
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="portfolio.html" class="menu_ativo">Portifólio</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="portfolio.html">Portifólio</a></li>
+                        <li><a href="contato.html" class="menu_ativo">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,38 +31,48 @@
         <!-- Fim Menu -->
         
         <!-- Introdução interna -->
-        <section class="introducao-interna interna_portfolio">
+        <section class="introducao-interna interna_contato">
             <div class="container">
-                <h1>Portfólio</h1>
-                <p>conheça os projetos que amamos mostrar</p>
+                <h1>Contato</h1>
+                <p>tire suas dúvidas com a gente</p>
             </div>
         </section>
         <!-- Fim Introdução interna -->
 
-        <!-- Blockquote -->
-        <section class="container">
-            <blockquote class="quote_clientes">
-                <p>
-                    "No mundo atual, a contínua expansão de nossa
-                    atividade cumpre um papel essencial na formulação
-                    da gestão inovadora da qual fazemos parte."
-                </p>
-                <cite>Barbara Moss</cite>
-            </blockquote>
-        </section>
-        <!-- Fim Blockquote -->
-
-        <!-- Portfólio -->
-        <section class="portfolio">
-            <div class="container">
-                <ul class="portfolio_lista">
-                    <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
-                    <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
-                    <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+        <!-- Formulário -->
+        <section class="contato container">
+            <form id="form_orcamento" class="contato_form grid-8">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+                <label for="email">E-mail</label>
+                <input type="text" id="email">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="Telefone">
+                <label for="espec">Especificações</label>
+                <textarea id="Telefone"></textarea>
+                <button type="submit" class="btn btn-preto">Enviar</button>
+            </form>
+            <div class="contato_dados grid-8">
+                <h3>Dados</h3>
+                <span>+55 21 9999-9999</span>
+                <span>contato@bikcraft.com</span>
+                <span>Rua Irmã Catarina - Memorare</span>
+                <span>Teresina - PI - Brasil</span>
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"></a></li>
+                    <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"></a></li>
+                    <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"></a></li>
                 </ul>
             </div>
         </section>
-        <!-- Fim Portfólio -->
+        <!-- Fim Formulário -->
+
+        <!-- Mapa -->
+        <section class="container contato_mapa">
+            <a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
+        </section>
+        <!-- Fim Mapa -->
 
         <!-- Quebra -->
         <section class="quebra">
