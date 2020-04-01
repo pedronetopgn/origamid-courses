@@ -2,13 +2,22 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Bikcraft - Contato</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/grid.css">
+        <title>Bikcraft - Contato - 21 9 9999-9999</title>
+        <!-- SEO -->
+        <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuimos modelos Passeio, Esporte e Retrô.">
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Bikcraft -  Contato - 21 9 9999-9999"/>
+        <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuimos modelos Passeio, Esporte e Retrô."/>
+        <meta property="og:url" content="http://bikcraft.com/contato.html"/>
+        <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="favicon.ico"> <!-- Usar favcon generator no google para gerar favcon -->
+        <!-- FIM SEO -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/contato.css">
-        <link rel="stylesheet" href="css/responsivo.css">
+        <script>document.documentElement.classList.add("js");</script>
     </head>
 
     <body>
@@ -34,23 +43,23 @@
         <!-- Introdução interna -->
         <section class="introducao-interna interna_contato">
             <div class="container">
-                <h1>Contato</h1>
-                <p>tire suas dúvidas com a gente</p>
+                <h1 data-anime="400" class="fadeInDown">Contato</h1>
+                <p data-anime="800" class="fadeInDown">tire suas dúvidas com a gente</p>
             </div>
         </section>
         <!-- Fim Introdução interna -->
 
         <!-- Formulário -->
-        <section class="contato container">
+        <section class="contato container fadeInDown" data-anime="1200">
             <form id="form_orcamento" class="contato_form grid-8">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome">
-                <label for="email">E-mail</label>
-                <input type="text" id="email">
-                <label for="telefone">Telefone</label>
-                <input type="text" id="Telefone">
-                <label for="espec">Especificações</label>
-                <textarea id="Telefone"></textarea>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone">
+                    <label for="mensagem">Especificações</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
                 <button type="submit" class="btn btn-preto">Enviar</button>
             </form>
             <div class="contato_dados grid-8">
@@ -61,22 +70,34 @@
                 <span>Teresina - PI - Brasil</span>
                 <h3>Redes sociais</h3>
                 <ul>
-                    <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"></a></li>
-                    <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"></a></li>
-                    <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"></a></li>
+                    <li>
+                        <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"
+                        alt="Facebook Bikcraft">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"
+                        alt="Instagram Bikcraft">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"
+                        alt="Twitter Bikcraft">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
         <!-- Fim Formulário -->
 
         <!-- Mapa -->
-        <section class="container contato_mapa">
+        <div class="container contato_mapa">
             <a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
-        </section>
+        </div>
         <!-- Fim Mapa -->
 
         <!-- Quebra -->
-        <section class="quebra">
+        <div class="quebra">
             <blockquote class="quote-externo container">
                 <p>
                     “o verdadeiro segredo da felicidade
@@ -85,7 +106,7 @@
                 </p>
                 <cite>WILLIAM MORRIS</cite>      
             </blockquote>
-        </section>
+        </div>
         <!-- Fim Quebra -->
 
         <!-- Footer -->
@@ -116,9 +137,21 @@
                     <div class="grid-4 footer_redes">
                         <h3>Contato</h3>
                         <ul>
-                            <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"></a></li>
-                            <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"></a></li>
-                            <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"></a></li>
+                            <li>
+                                <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"
+                                alt="Facebook Bikcraft">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"
+                                alt="Instagram Bikcraft">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"
+                                alt="Twitter Bikcraft">
+                                </a>
+                            </li>
                         </ul>
                     </div>  
                 </div>
@@ -129,7 +162,10 @@
 					<p class="grid-16">Bikcraft 2019 - Alguns direitos reservados.</p>
 				</div>
 			</div>
-
         </footer>
+
+        <script src="./js/simple-anime.js"></script>
+        <script src="./js/script.js"></script>
+
     </body>
 </html>

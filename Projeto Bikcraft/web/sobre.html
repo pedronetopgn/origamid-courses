@@ -2,13 +2,22 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Bikcraft - Sobre</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/grid.css">
+        <title>Bikcraft - Saiba mais sobre a gente</title>
+        <!-- SEO -->
+        <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuimos modelos Passeio, Esporte e Retrô.">
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Bikcraft - Saiba mais sobre a gente"/>
+        <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuimos modelos Passeio, Esporte e Retrô."/>
+        <meta property="og:url" content="http://bikcraft.com/sobre.html"/>
+        <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="favicon.ico"> <!-- Usar favcon generator no google para gerar favcon -->
+        <!-- FIM SEO -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/sobre.css">
-        <link rel="stylesheet" href="css/responsivo.css">
+        <script>document.documentElement.classList.add("js");</script>
     </head>
 
     <body>
@@ -34,13 +43,13 @@
         <!-- Introdução interna -->
         <section class="introducao-interna interna_sobre">
             <div class="container">
-                <h1>Sobre</h1>
-                <p>conheça mais sobre o Bikcraft</p>
+                <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+                <p data-anime="800" class="fadeInDown">conheça mais sobre o Bikcraft</p>
             </div>
         </section>
         <!-- Fim Introdução interna -->
 
-        <section class="missao_sobre container">
+        <section class="missao_sobre container fadeInDown" data-anime="1200">
             <div class="grid-10">
                 <h2 class="subtitulo-interno">História, Missão e Visão</h2>
                 <p> 
@@ -101,7 +110,7 @@
         <!-- Fim Qualidade-->
 
         <!-- Quebra -->
-        <section class="quebra">
+        <div class="quebra">
             <blockquote class="quote-externo container">
                 <p>
                     “o verdadeiro segredo da felicidade
@@ -110,7 +119,7 @@
                 </p>
                 <cite>WILLIAM MORRIS</cite>      
             </blockquote>
-        </section>
+        </div>
         <!-- Fim Quebra -->
 
         <!-- Footer -->
@@ -141,9 +150,21 @@
                     <div class="grid-4 footer_redes">
                         <h3>Contato</h3>
                         <ul>
-                            <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"></a></li>
-                            <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"></a></li>
-                            <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"></a></li>
+                            <li>
+                                <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"
+                                alt="Facebook Bikcraft">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"
+                                alt="Instagram Bikcraft">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg"
+                                alt="Twitter Bikcraft">
+                                </a>
+                            </li>
                         </ul>
                     </div>  
                 </div>
@@ -154,7 +175,10 @@
 					<p class="grid-16">Bikcraft 2019 - Alguns direitos reservados.</p>
 				</div>
 			</div>
-
         </footer>
+
+        <script src="./js/simple-anime.js"></script>
+        <script src="./js/script.js"></script>
+
     </body>
 </html>
