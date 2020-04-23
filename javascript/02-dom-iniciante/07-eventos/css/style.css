@@ -9,6 +9,10 @@ img {
     max-width: 100%;
 }
 
+.azul {
+    background: teal;
+}
+
 ul {
     list-style: none;
 }
