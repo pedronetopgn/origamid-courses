@@ -13,6 +13,10 @@ img {
     background: teal;
 }
 
+html.redimensionar {
+    font-size: 150%;
+}
+
 ul {
     list-style: none;
 }
