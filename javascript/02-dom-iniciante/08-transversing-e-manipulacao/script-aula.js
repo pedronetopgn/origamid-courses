@@ -1,57 +1,31 @@
-const img = document.querySelector('img');
+const lista = document.querySelector('.animais-lista');
 
-function callback(event) {
-    console.log(event);
-}
+console.log(lista.children[--lista.children.length]);
+console.log(lista.querySelector('li:last-child'));
 
-// img.addEventListener('click', callback); 
+console.log(lista.previousSibling);
 
-// const animaisLista = document.querySelector('.animais-lista');
+const animais = document.querySelector('.animais');
+const contato = document.querySelector('.contato');
+const titulo = contato.querySelector('.titulo');
+const mapa = document.querySelector('.mapa');
 
-function callbackLista(event) {
-    console.log(event.currentTarget); // informação geral
-    console.log(event.target); // onde o clique ocorreu 
-    console.log(event.type); // tipo do evento
-}
+//animais.appendChild(titulo); // appendeChild leva um elemento de um lugar para outro, o destino está antes do .appendChild
 
-// animaisLista.addEventListener('click', callbackLista);
+//contato.insertBefore(animais, mapa);//primeiro parâmetro é o que se deseja mover, o segundo serve como referência para ser adicionado antes deste (IMPORTANTE, O SEGUNDO PARÂMETRO TEM QUE SER FILHO DO ELEMENTO QUE CHAMA A FUNÇÃO)
 
-const linkExterno = document.querySelector('a[href^="http"]');
+contato.replaceChild(lista, titulo);
 
-function handleLinkExterno(event) {
-    event.preventDefault(); // previne a ação que ocorreria
-    console.log(this.getAttribute('href')); // fala com o elemento linkExterno = event.currentTarget
-}
+const novoh1 = document.createElement('h1');
+novoh1.innerText = 'Novo Título';
+novoh1.classList.add('titulo');
 
-linkExterno.addEventListener('click', handleLinkExterno);
+mapa.appendChild(novoh1);
+
+// clonando elemento
 
 const h1 = document.querySelector('h1');
+const faq = document.querySelector('.faq');
 
-function handleEvent(event) {
-    console.log(event.type, event);
-}
-
-// h1.addEventListener('click', handleEvent);
-// h1.addEventListener('mouseenter', handleEvent);
-// h1.addEventListener('mousemove', handleEvent);
-
-// window.addEventListener('scroll', handleEvent);
-// window.addEventListener('resize', handleEvent);
-
-function handleKeyboard(event) {
-    if(event.key === 'a') {
-        document.body.classList.toggle('azul');
-    }
-}
-
-window.addEventListener('keydown', handleKeyboard);
-
-const imgs = document.querySelectorAll('img');
-
-function handleImg(event) {
-    console.log(event.target.getAttribute('src'));
-}
-
-imgs.forEach((img) => {
-    img.addEventListener('click', handleImg);
-});
+const cloneH1 = h1.cloneNode(true);
+faq.appendChild(cloneH1);
