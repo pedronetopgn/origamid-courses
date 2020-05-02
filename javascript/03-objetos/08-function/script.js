@@ -1,69 +1,32 @@
-// function somar (n1, n2) {
-//     return n1 + n2;
-// }
-
-// console.log(somar(3,3));
-// console.log(somar.length);
-// console.log(somar.name);
-
-// function darOi() {
-//     console.log('Oi');
-// }
-// darOi.call();
-
-// function descricaoCarro(velocidade) {
-//     console.log(this);
-//     console.log(this.marca + ' ' + this.ano + velocidade);
-// }
-// descricaoCarro.call({marca: 'Honda', ano: 2015}, 100); // passa um objeco como principal
-
-// const carros = ['Ford', 'Fiat', 'VW'];
-// const frutas = ['Banana', 'Pêra', 'Uva'];
-
-// carros.forEach.call(frutas,(item) => {
-//     console.log(item);
-// })
-
-// function Dom(seletor) {
-//     this.element = document.querySelector(seletor);
-// }
-
-// Dom.prototype.ativo = function(classe) {
-//     console.log(this);
-//     this.element.classList.add(classe);
-// }
-
-// const li = {
-//     element: document.querySelector('li'),
-// }
-
-// Dom.prototype.ativo.call(li, 'ativar');
-
-
-// const ul = new Dom('ul');
-
-// ul.ativo.call(li, 'ativar');
-
-
-const frutas = ['Banana', 'Pêra', 'Uva'];
-
-Array.prototype.mostrarThis = function() {
-    console.log(this);
+// Retorne a soma total de caracteres dos
+// parágrafos acima utilizando reduce
+const paragrafos = document.querySelectorAll('p');
+console.log(paragrafos);
+// usar Array.protoype quando for nodeList
+const quantCaracteres = Array.prototype.reduce.call(paragrafos, (acumulador, item) => {
+    return acumulador + item.innerText.length;
+}, 0);
+console.log(quantCaracteres);
+//---------------------------------------------------------------------------
+// Crie uma função que retorne novos elementos
+// html, com os seguintes parâmetros
+// tag, classe e conteudo.
+function criarElemento(tag, classe, conteudo) {
+    const elemento = document.createElement(tag);
+    classe ? elemento.classList.add(classe) : null;
+    conteudo ? elemento.innerHTML = conteudo : null;
+    return elemento;
 }
 
-Array.prototype.pop.call(frutas);
-frutas.pop(); // igual ao de cima
+console.log(criarElemento('li', 'azul', 'Esse é o conteúdo'));
+//----------------------------------------------------------------------------
+// Crie uma nova função utilizando a anterior como base
+// essa nova função deverá sempre criar h1 com a
+// classe titulo. Porém o parâmetro conteudo continuará dinâmico
+const h1Titulo = criarElemento.bind(null, 'h1', 'titulo'); //se torna uma função h1Titulo
 
-const li = document.querySelectorAll('li');
+const cursosJS = h1Titulo('Cursos de JavaScript')
+const cursosHTML = h1Titulo('Cursos de HTML')
 
-const filtro = Array.prototype.filter.call(li, (item) => { //dessa forma com call pois por padrão no nodeList, não existe o método filter, outra forma seria transformando em array: Array.from(li)
-    return item.classList.contains('ativo');
-});
 
-console.log(filtro);
-
-console.log(li);
-
-const numeros = [3,43,56,445,4332,322,23];
-console.log(Math.max.apply(null, numeros)); //apply recebe um array e transforma cada item em argumento
-
+console.log(cursosJS, cursosHTML);
