@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     z-index: 2000;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -22,6 +22,22 @@
     border: 10px solid #FB5;
     box-shadow: 0 0 0 10px white;
     position: relative;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.ativo .modal {
+    animation: modal .3s forwards;
 }
 
 .fechar {
