@@ -136,9 +136,6 @@ body {
     margin-top: 2rem;
     margin-bottom: .5rem;
     color: #e54;
-}
-
-.faq-lista dt:hover { /* alteração minha */
     cursor: pointer;
 }
 

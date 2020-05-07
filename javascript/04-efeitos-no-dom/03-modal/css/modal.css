@@ -11,8 +11,13 @@
     align-items: center;
 }
 
+.modal-container.ativo {
+    display: flex;
+}
+
 .modal {
     background: white;
+    min-width: 300px;
     padding: 40px;
     border: 10px solid #FB5;
     box-shadow: 0 0 0 10px white;
@@ -58,4 +63,5 @@
     color: white;
     font-family: 'IBM Plex Mono', monospace;
     margin-top: 1rem;
+    font-weight: bold;
 }
