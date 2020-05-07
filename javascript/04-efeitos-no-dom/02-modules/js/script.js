@@ -9,7 +9,7 @@ import * as teste from './modules/teste.js'; //importar tudo sem saber o nome da
 
 teste.teste1();
 teste.teste2();
-
+console.log(teste.senha);
 
 initScrollSuave();
 initAnimacaoScroll();
